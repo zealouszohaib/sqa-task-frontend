@@ -177,7 +177,7 @@ const Home = () => {
       setIsUploading(true);
       setUploadStatus({ message: 'Uploading your file...', type: 'info' });
 
-      const response = await axios.post('https://sqa-task.com/api/upload', formData, {
+      const response = await axios.post('https://task-backend-production-a1fb.up.railway.app/api/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
